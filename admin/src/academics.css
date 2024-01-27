@@ -1,0 +1,473 @@
+@font-face {
+    font-family: 'Pixeled';
+    src: url('../src/fonts/Minecraft.ttf');
+}
+
+
+#academic {
+    width: calc(100vw - 200px);
+    height: 100vh;
+    overflow: auto;
+}
+
+#academicNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    padding: 4rem 0;
+    overflow: hidden;
+}
+
+#academicNav .top-text h2 {
+    color: #000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    font-family: 'Pixeled', sans-serif;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+#academicNav .banner ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 100vw;
+    background: #FFC700;
+    padding: 1rem 0;
+}
+
+#academicNav .banner li {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.active-tab {
+    border-radius: 83px;
+    background: #FFF;
+    padding: 0.5rem 3rem;
+    color: #000 !important;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+    padding: 0 4rem;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+}
+
+#content .head {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.head #submit {
+    padding: 0.5rem 4rem;
+    border-radius: 14.715px;
+    border: 0.46px solid rgba(0, 0, 0, 0.30);
+    background: #5ECC4F;
+    box-shadow: 1.83931px 1.83931px 3.67863px 0px rgba(0, 0, 0, 0.25);
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.head #class,
+.head #year ,
+.head #fileLabel{
+    padding: 0.3rem 3rem;
+    border-radius: 14.715px;
+    border: 0.46px solid rgba(0, 0, 0, 0.30);
+    background: rgba(255, 255, 255, 0.24);
+    box-shadow: 1.83931px 1.83931px 3.67863px 0px rgba(0, 0, 0, 0.25);
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+#content .subject {
+    position: relative;
+}
+
+#content .subject input {
+    padding: 0.5rem 2.5rem;
+    border-radius: 13.87px;
+    border: 0.433px solid rgba(0, 0, 0, 0.30);
+    background: rgba(255, 255, 255, 0.24);
+}
+#content .subject input{
+    width: max-content;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+#content .file-container label{
+    width: max-content;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+#content .file-container ul{
+    width: max-content;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+#content .file-name button{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 0.433px solid rgba(0, 0, 0, 0.30);
+    background: rgba(255, 255, 255, 0.24);
+}
+#content .subject label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+#content .head form {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#academicNav .banner li:hover{
+    cursor: pointer;
+}
+ a{
+    text-decoration: none;
+}
+#content .head p {
+    color: #212529;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    width: 70%;
+    /* 141.667% */
+}
+
+#content h3 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+#content .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#content .container .box {
+    width: fit-content;
+    border-radius: 16px;
+    border: 1px solid var(--Gray-5, #E0E0E0);
+    background: #FFF;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1.8fr 1fr;
+    padding: 2rem;
+}
+
+#content .container .box .left-text h4 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#content .container .box .right-text ol {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#content .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-evenly;
+}
+
+#content .items .item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#content .items .item h4 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#content .items .item ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+#content .items .item li {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: #111;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+}
+#content .items .item li a{
+    text-decoration: none !important;
+}
+
+.class {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    justify-content: center;
+
+}
+
+
+.class h2 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.class td,
+.class th{
+    text-align: center;
+    border: 1px solid #000;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    padding: 1rem 2rem;
+}
+.class th{
+    font-weight: 600;
+}
+
+/*.class tbody {*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr 1fr;*/
+/*}*/
+
+/*.class table {*/
+/*    width: fit-content;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+
+/*}*/
+
+/*.class tr {*/
+/*    width: 300px !important;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.class td {*/
+/*    width: 100%;*/
+/*    border: 1px solid #000;*/
+/*    color: #000;*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*    font-size: 1rem;*/
+/*    font-style: normal;*/
+/*    font-weight: 500;*/
+/*    line-height: normal;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-evenly;*/
+/*}*/
+
+#academicQuestion .class {
+    padding: 2rem 0;
+}
+
+@media only screen and (max-width: 900px) {
+    #academicNav {
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+
+    #academicNav .top-text h2 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    #academicNav .banner li {
+        width: 30vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #academicNav .banner .tab {
+        font-size: 0.6rem;
+    }
+
+    #academicNav .banner .active-tab {
+        padding: 0.5rem;
+    }
+
+    .class {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .class tr {
+        width: 45vw !important;
+    }
+
+    .class h2 {
+        font-size: 2rem;
+    }
+
+    #content .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #content {
+        padding: 1rem;
+    }
+
+    #content .container .box {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    #content .container .box .left-text h4 {
+        margin: 0;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #content .container .box .right-text {
+        width: 100%;
+    }
+
+    #content .container .box .right-text ol {
+        font-size: 0.9rem;
+    }
+
+    #content .items {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    #content .items .item li {
+        width: 45%;
+        font-size: 1rem;
+    }
+
+    #content .items .item ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #content h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #content .head p {
+        font-size: 0.8rem;
+        width: auto;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,372 @@
+@media only screen and (max-width: 900px){
+    #container{
+        flex-direction: column;
+    }
+    #academic{
+        width: 100%;
+    }
+    #content .file-container label{
+        font-size: 0.8rem;
+    }
+    
+    .head #submit , .head #class, .head #year, .head #fileLabel , #content .subject input{
+        padding: 0.3rem 0.5rem;
+        font-size: 0.8rem;
+        border-radius: 10px;
+        width : fit-content;
+    }
+    #content .container{
+        gap: 1rem;
+    }
+    #content .container .box .right-text ol{
+        margin: 0;
+    }
+    #content .container .box{
+        width: 80%;
+    }
+    #academicNav .banner .active-tab{
+        padding: 0.3rem 0.7rem;
+    }
+    #academicNav .banner .tab{
+        width: auto;
+    }
+    #content .head form {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    #content .subject label{
+        font-size: 1rem;
+    }
+    #myTable_1_wrapper {
+        width: 100%;
+    }
+    .class td, .class th{
+        font-size: 0.7rem;
+    }
+    .class{
+        padding: 0;
+    }
+    .navbar-expand-lg .navbar-collapse{
+        height: auto;
+    }
+    #sidebar .navbar-expand-lg .navbar-nav {
+        width: auto;
+        height: auto;
+        align-items: normal;
+    }
+    #footer form{
+        width: 90%;
+        gap: 1rem;
+    }
+    #contact{
+        width: auto;
+    }
+    
+    /*navbar start*/
+    
+    .navbar-top {
+        flex-direction: column-reverse;
+        padding: 2rem;
+        align-items: center;
+    }
+    .navbar-top form{
+        width: 100%;
+    }
+    .scl-logo input[type="file"], .other-logo input[type="file"] {
+        width: auto;
+    }
+    .other-logos {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .table-responsive{
+        padding: 0 1rem !important;
+    }
+    
+    .other-logos form{
+        padding: 2rem !important;
+        display: flex;
+        flex-direction: column-reverse !important;
+        gap: 1rem !important;
+        align-items: center;
+    }
+    .scl-name, .scl-logo, .other-logo {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+    
+    /*home start*/
+    #home{
+        width: 100%;
+    }
+    .left-box{
+        width: 100%;
+    }
+    .left-box .text {
+        position: relative;
+        height: auto;
+    }
+    .left-box .file-input-container{
+        padding: 0.5rem 0;
+    }
+    .left-box .notice-publish input{
+        padding: 0.5rem 0;
+    }
+    .add-event form{
+        width: 100%;
+    } 
+    .event-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .date-time {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+    .add-event form{
+        gap: 1rem;
+    }
+    #professor .left{
+        position: unset;
+    }
+    .text textarea, .text input{
+        width: 100% !important;
+    }
+    #home .right label{
+        font-size: 1rem;
+        width: 100%;
+    }
+    .about-scl form {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+    }
+    #sig {
+        color: #000;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        border-radius: 16px;
+        border: 0.5px solid rgba(0, 0, 0, 0.30);
+        background: #FFF;
+        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+        color: #000;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 0.5rem;
+    }
+    .academic .student .img-container{
+        position: unset;
+        width: 200px !important;
+        height: 200px !important;
+    }
+    .text3 {
+        width: fit-content !important;
+        flex-direction: column-reverse !important;
+        align-items: center;
+        gap: 2rem;
+        padding: 0rem;
+    }
+    .name, .percentage, .dropdown{
+        width: 100% !important;
+    }
+    .drop-img, .sports-extra {
+        width: 100% !important;
+        gap: 1rem !important;
+        flex-direction: column !important;
+    }
+    .sports-name, .extra-name {
+        width: 100% !important;
+    }
+    .text3 form{
+        gap: 1rem !important;
+    }
+    .slides .right .img-container {
+        position: unset;
+        width: 200px !important;
+        height: 200px !important;
+    }
+    .slides .right {
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        justify-content: space-between;
+        position: relative;
+    }
+    #image-preview {
+        height: 25vh;
+        filter: brightness(0.7);
+        width: 100%;
+    }
+    #default-image{
+        width: 100% !important;
+        aspect-ratio: 1/1 !important;
+    }
+    /*log-in*/
+    
+    #log-in .login-form{
+        width: 85%;
+        padding: 2rem 1rem;
+    }
+    #log-in .container{
+        gap: 1rem;
+    }
+    #log-in .form-group{
+        gap: 0.5rem
+    }
+    #log-in .form-group label{
+        font-size: 1rem;
+    }
+    #log-in .submit-btn input{
+        width: 6rem;
+    }
+    #myTable3 img{
+        width: 50px !important;
+    }
+    #submit_btn {
+        width: fit-content !important;
+        padding: 0.4rem 0.8rem !important;
+        font-family: 'Poppins',sans-serif;
+        font-size: 0.7rem !important;
+        border-radius: 8px !important;
+    }
+    #admission{
+        width: 100%;
+    }
+    .name-qua{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 0.7rem !important;
+    }
+    .person form{
+        width: 100% !important;
+    }
+    .name, .qualification, .dropdown{
+        width: 100%;
+    }
+    .person_container{
+        gap: 2rem
+    }
+    #achievements{
+        width: 100%;
+    }
+    #gallery{
+        width: 100%;
+    }
+    #gallery form{
+        gap: 0.5rem
+    }
+    #gallery .table img{
+        width: 50px !important;
+    }
+    #about{
+        width: 100%;
+    }
+    #about .text-input textarea{
+        height: 100px;
+    }
+    .abt_text .img-container{
+        position: unset;
+    }
+    .date-img {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #upload-form_abt input[type="text"], #upload-form_abt input[type="date"], #upload-form_abt input[type="file"], #upload-form_abt textarea{
+        width: 100%;
+    }
+    #upload-form_abt{
+        gap:1rem;
+    }
+    #legacy-container .items .item .img{
+        padding: 1.3rem;
+    }
+    #staff-details form{
+        width: 95%;
+        padding: 2rem;
+    }
+    #image-preview2{
+        width: 280px !important;
+        height: 280px !important;
+    }
+    #event , #date{
+        padding: 0.4rem;
+        border-radius: 10px
+    }
+    .text-event{
+        gap:0.5rem;
+    }
+    #image-preview3{
+        width: 280px !important;
+        height: 280px !important;
+    }
+    .sports-container .events{
+        width: 100%;
+    }
+    #upload-container-ach label {
+        width: 80%;
+        color: #000;
+        font-family: 'Mont-light', sans-serif;
+        font-size: 0.7rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: capitalize;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 16px;
+        background: #FFF;
+        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    #calendar{
+        width: 100%;
+    }
+    #calendar form{
+        gap: 0.5rem;
+    }
+    .text-input input[type="submit"]{
+        width: fit-content !important;
+        padding: 0.5rem 1rem !important;
+        border-radius: 10px !important;
+        font-size: 0.8rem;
+        color: #FFF;
+    }
+    #feedback{
+        font-size: 2rem;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

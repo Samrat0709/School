@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Pixeled';
+    src: url('../src/fonts/Minecraft.ttf');
+}
+
+.msg{
+    display: block ;
+}
+
+#admission{
+    width: calc(100vw - 200px);
+    height: 100vh;
+    overflow: auto;
+}
+#admission .top-text {
+    padding: 3rem 0;
+}
+
+#admission h3 {
+    color: #000;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#admission .top-text h2 {
+    text-align: center;
+    color: #000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    font-family: 'Pixeled', sans-serif;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+#admission #text {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* width: 50%; */
+}
+
+#admission .text h3 {
+    margin: 0;
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#admission #text p {
+    margin: 0;
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 70%;
+    margin: 0;
+}
+
+.step-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+
+.step-btn-container .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.step .msg {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.step .text {
+    padding: 2rem;
+    border: 3px dashed #000;
+
+
+}
+
+.text h4 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 162%;
+    margin: 0;
+    /* 45.36px */
+}
+
+.text h5 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 162%;
+}
+
+.text li {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 162%;
+}
+
+
+
+
+.fill {
+    color: #000;
+    border: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    padding: 0.8rem 6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    outline: 0;
+    background: #FFC700;
+    cursor: pointer;
+    position: relative;
+}
+
+.fill::after {
+    content: "";
+    border: 2px solid #000;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+.fill:hover::after {
+    top: 0px;
+    left: 0px;
+}
+
+@media only screen and (max-width: 900px) {
+    #admission .top-text {
+        padding: 1rem 0;
+    }
+
+    #admission .top-text h2 {
+        font-size: 3rem;
+    }
+    #admission #text{
+        padding: 0 1rem;
+    }
+    #admission h3{
+        font-size: 1.3rem;
+    }
+    #admission #text p{
+        width: auto;
+        font-size: 0.8rem;
+    }
+    .fill{
+        width: 50vw;
+        font-size: 1rem;
+    }
+    .step .arrow svg{
+        height: 15vh;
+    }
+    .step-btn-container{
+        padding: 2rem 1rem;
+    }
+    .step .text{
+        padding: 1rem;
+    }
+    .text h4{
+        font-size: 1rem;
+    }
+    .text li{
+        font-size: 0.7rem;
+    }
+    .text h5{
+        font-size: 0.9rem;
+    }
+}

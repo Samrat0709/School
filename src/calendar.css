@@ -1,0 +1,429 @@
+@font-face {
+    font-family: 'Pixeled';
+    src: url('../src/fonts/Minecraft.ttf');
+}
+
+#calendar .top-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 0;
+}
+
+#calendar .top-text h2 {
+    color: #000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    font-family: 'Pixeled', sans-serif;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+#calendar .top-text h3 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+/*#calendar .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{*/
+/*    display: none;*/
+/*}*/
+.middle-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 0 8rem;
+}
+
+.cal-box1 {
+    width: 100%;
+}
+
+.cal-box2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cal-box2 .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.cal-box2 .bottom h4 {
+    margin: 0;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%;
+    /* 54.4px */
+}
+
+.cal-box2 img {
+    width: 100%;
+}
+
+.onThisDay {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    padding: 5rem 9rem;
+}
+
+.onThisDay h3 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 170%;
+    margin: 0;
+    /* 54.4px */
+}
+
+.onThisDay .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 15rem;
+}
+
+.card-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.top-right svg {
+    font-size: 1.5rem;
+    color: #FFC700;
+}
+
+.card-top span {
+    border-radius: 13px;
+    background: #FFF;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    color: var(--Gray-1, #333);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /*width: 8rem;*/
+    padding: 0.5rem 1rem;
+}
+
+.card-bottom {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    text-align: left;
+    height: 100%;
+}
+
+.card-bottom .img-container {
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+
+.card-bottom .img-container img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.card-bottom .text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.7rem;
+
+}
+
+.card-bottom .text h4 {
+    color: var(--Gray-2, #4F4F4F);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+.card-bottom .text p {
+    margin: 0;
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.birthday {
+    display: flex;
+    flex-direction: column;
+
+    padding: 5rem;
+}
+
+.birthday h3 {
+    margin: 0;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%;
+    /* 54.4px */
+}
+
+.birthday-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: multiply;
+}
+
+.birthday-card .img-container {
+    padding: 1rem;
+    background: #FCDE70;
+}
+
+.birthday-card .img-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.birthday-card .b-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #FFC700;
+    padding: 2rem;
+}
+
+.birthday-card .b-card .name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 1rem 0;
+}
+
+.birthday-card .b-card .name h5 {
+    margin: 0;
+    color: var(--Gray-1, #333);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.birthday-card .b-card .name span {
+    color: var(--Gray-2, #4F4F4F);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.birthday-card .b-card .wish {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.birthday-card .b-card .wish p {
+    margin: 0;
+
+    color: var(--Gray-2, #4F4F4F);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.birthday-card .b-card .share-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.send-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+.send-buttons button {
+    width: 100%;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+.send-buttons .msg-btn {
+    color: var(--Gray-1, #333);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: #FFC700;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.send-buttons .gift {
+    border: 2px solid #FFC700;
+    background: #FFF;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    color: var(--Gray-2, #4F4F4F);
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.event-buttons form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: 'Poppins',sans-serif;
+}
+.qoute-container{
+    position: relative;
+    border-radius: 1.5rem;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: auto;
+}
+.qoute-container h5{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    color: var(--Gray-2, #4F4F4F);
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: #E7D9D6;
+}
+
+
+@media only screen and (max-width:900px){
+    #calendar .top-text{
+        padding: 1rem ;
+    }
+    .no-event p{
+        font-size: 1rem;
+    }
+    #calendar .top-text h2{
+        font-size: 3rem;
+    }
+    #calendar .top-text h3{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .qoute-container h5{
+        width: 80%;
+        font-size: 0.8rem;
+    }
+    .middle-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    .onThisDay{
+        padding: 4rem 1rem;
+    }
+    .onThisDay .card{
+        padding: 1rem;
+        height: auto;
+    }
+    .card-bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-left{
+        gap: 1rem;
+    }
+    .card-top span{
+        /*width: 25vw;*/
+        font-size: 0.9rem;
+        border-radius: 10px;
+    }
+    .birthday{
+        padding: 2rem;
+        gap: 1rem;
+        text-align: center;
+    }
+    .birthday-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .birthday-card .b-card{
+        padding: 1rem;
+    }
+    .birthday-card .b-card .name{
+        padding: 0;
+    }
+    .send-buttons .msg ,
+    .send-buttons .gift{
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+    .birthday h3{
+        font-size: 2rem;
+    }
+}

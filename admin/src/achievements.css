@@ -1,0 +1,474 @@
+@font-face {
+    font-family: 'Helvetica Condensed Black';
+    src: url('../src/fonts/Helvetica\ Black\ Condensed.otf');
+}
+
+@font-face {
+    font-family: 'Pixeled';
+    src: url('../src/fonts/Minecraft.ttf');
+}
+
+#event {
+    width: 50%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 16px;
+    border: 0.5px solid rgba(0, 0, 0, 0.30);
+    background: rgba(255, 255, 255, 0.856);
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#date {
+    width: 50%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Poppins' , sans-serif;
+    text-transform: uppercase;
+    border-radius: 16px;
+    border: 0.5px solid rgba(0, 0, 0, 0.30);
+    background: rgba(255, 255, 255, 0.856);
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#event::placeholder {
+    color: #000;
+    font-family: 'Mont-bold', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.text-event {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50% , -50%);
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#date::placeholder {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+#achievements {
+    width: calc(100vw - 200px);
+    height: 100vh;
+    overflow: auto;
+}
+
+#upload-container-ach {
+    z-index: 10;
+    position: absolute;
+    height: fit-content;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+}
+
+#achievements .upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #FFC700;
+    position: relative;
+    justify-content: flex-start;
+}
+
+#achievements .upper .achievement {
+    position: absolute;
+    width: 35%;
+    right: 5%;
+    bottom: -30%;
+}
+
+#achievements .upper .achievement img {
+    width: 100%;
+}
+
+#achievements .upper .text {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 40%;
+    padding: 5rem 0;
+    padding-left: 4rem;
+}
+
+#achievements .upper .text h2 {
+    color: #FFF;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    font-family: 'Pixeled';
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+#achievements .upper .text p {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+#achievements .events-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 6rem 3rem;
+    background: #FFF8D2;
+}
+
+#achievements .events-container .sports,
+.extra-curricular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    gap: 3rem;
+}
+
+.events-container h3 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.events-container .sports .students,
+.events-container .extra-curricular .students {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+.text-event form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#submit_btn {
+    
+    border: 1px solid rgba(87, 87, 87, 0.59);
+    backdrop-filter: blur(10px);
+}
+
+.students .student {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.events-container .text {
+    text-align: center;
+}
+
+.events-container .text h4 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.events-container .text h5 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.events-container .student .img-container {
+    width: 80%;
+    height: auto;
+}
+
+.events-container .student .img-container img {
+    width: 100%;
+}
+
+.qoute {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 4rem;
+    background-image: url('../src/img/mountain.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+.qoute h2,
+.qoute p {
+    color: #FFF;
+    font-family: 'Helvetica Condensed Black', sans-serif;
+    font-size: 4rem;
+    width: 70%;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+    mix-blend-mode: soft-light;
+    margin: 0;
+
+}
+
+.sports-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    margin: 3rem 0;
+    background: #000745;
+    padding: 3rem 1rem;
+}
+
+.sports-container h3 {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.sports-container .events {
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.sports-container .events .event-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.8rem;
+}
+
+.sports-container .event {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sports-container .event .text {
+    position: absolute;
+    width: 100%;
+    padding: 1.5rem;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 6.47%, rgba(255, 255, 255, 0.36) 99.62%);
+    backdrop-filter: blur(4.487179279327393px);
+}
+
+.sports-container .events .event-left,
+.event-right {
+    width: 50%;
+}
+
+.sports-container .events .event-left h4 {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.sports-container .events .event-right h4 {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.sports-container .events .event-left h5 {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.sports-container .events .event-right h5 {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.sports-container .events .event-left img,
+.event-right img {
+    width: 100%;
+}
+
+.sports-container .moments {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sports-container .moments .top-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.sports-container .moments .top-container .col {
+    width: 33.3%;
+}
+
+.sports-container .moments .top-container img {
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    #achievements .upper .text h2 {
+        font-size: 10vw;
+        margin: 0;
+    }
+
+    #achievements .upper .text p {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    #achievements .upper .text {
+        width: 100%;
+        padding: 3rem;
+        gap: 1rem;
+    }
+
+    #achievements .events-container {
+        margin: 3rem 1.2rem;
+        gap: 0;
+    }
+
+    .events-container .sports .students,
+    .events-container .extra-curricular .students {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .events-container h3 {
+        font-size: 7vw;
+    }
+
+    .qoute {
+        padding: 2rem;
+    }
+
+    .qoute h2,
+    .qoute p {
+        font-size: 11vw;
+        width: 100%;
+    }
+
+    .students .student {
+        gap: 0.3rem;
+    }
+
+    .events-container .student .img-container {
+        width: 50%;
+
+    }
+
+    .events-container .text h4 {
+        margin: 0;
+        font-size: 5vw;
+    }
+
+    .events-container .text h5 {
+        margin: 0;
+        font-size: 3.5vw;
+    }
+
+    .sports-container .event .text {
+        padding: 2vw;
+    }
+
+    .sports-container .events .event-left h4 {
+        font-size: 6vw;
+    }
+
+    .sports-container .events {
+        flex-direction: column;
+    }
+
+    .sports-container .events .event-left,
+    .event-right {
+        width: 100%;
+    }
+
+    .sports-container .events .event-left h5 {
+        font-size: 4vw;
+    }
+
+    .sports-container .events .event-right h4 {
+        font-size: 3vw
+    }
+    .sports-container .moments{
+        gap: 1rem;
+    }
+
+    .sports-container .events .event-right h5 {
+        font-size: 2vw
+    }
+
+    .sports-container {
+        margin: 0;
+    }
+}

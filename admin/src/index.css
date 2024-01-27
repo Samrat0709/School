@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Mont-light';
+    src: url('../src/fonts/Mont-Light.otf');
+}
+#submit_btn {
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    font-family: 'Poppins',sans-serif;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    
+}
+/*.text2 {*/
+/*    height: 75px;*/
+/*}*/
+#index {
+    width: calc(100vw - 200px);
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.index-item ul {
+    list-style: none;
+    font-family: 'Mont-light', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    color: #000;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.index-item li {
+    padding: 1rem 3rem;
+    text-decoration: none;
+    border-radius: 16px;
+    border: 0.5px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.index-item a {
+    text-decoration: none;
+}
+
+
+#sidebar .navbar-expand-lg .navbar-nav{
+    width: 200px;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+#home .navbar-brand{
+    height: 15vh !important;
+}
+#home .navbar-brand h1{
+    text-align: center;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    
+}
+#home{
+    width: calc(100vw - 200px);
+    height: 100vh;
+    overflow: auto;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#log-in {
+    width: auto;
+    height: 100vh;
+    background: #515151;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#log-in .login-form {
+    border-radius: 22px;
+    background: #FFF;
+    padding: 4rem 2rem;
+    width: 50%;
+
+}
+
+#log-in .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#log-in .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.8rem;
+}
+
+#log-in .form-group label {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#log-in .form-group input {
+    border-radius: 12px;
+    background: #D9D9D9;
+    border: none;
+    box-shadow: 4px 4px 11px 0px rgba(0, 0, 0, 0.25) inset;
+    height: 2.5rem;
+    padding-left: 1.5rem;
+    color: #848484;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#log-in .form-group a {
+    color: #F00;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#log-in .submit-btn {
+    display: flex;
+    justify-content: center;
+}
+
+#log-in .submit-btn input {
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    border-radius: 10px;
+    background: #FF5C00;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+#navbar{
+    height: 100vh;
+    overflow: auto;
+    width: 100%;
+}
+
+@media only screen and (max-width:900px){
+    .index-item ul{
+        font-size: 1rem;
+    }
+}
